@@ -14,11 +14,11 @@ Package.describe({
 
 Package.onUse(function (api) {
   api.versionsFrom('1.6')
-  api.use(['ecmascript', 'tracker'], 'client')
-  api.mainModule('simpleschema-helpers.js', 'client')
+  api.use(['ecmascript', 'tracker'])
+  api.mainModule('simpleschema-helpers.js')
 })
 
 Package.onTest(function (api) {
-  api.use(['ecmascript', 'tinytest', 'simpleschema-helpers'], 'client')
+  api.use(['ecmascript', 'tinytest', 'simpleschema-helpers'])
   api.mainModule('simpleschema-helpers-tests.js')
 })
